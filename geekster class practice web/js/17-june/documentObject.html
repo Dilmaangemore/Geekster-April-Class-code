@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fn() {
+            // acesss element of html in js require document object
+
+            //  to call function whenever click on button add attribut to button tag onclick="fn()"
+
+            console.log(document)
+        }
+        fn()
+    </script>
+    <style>
+        body{
+            margin: 0px;
+        }
+
+        #nav {
+            background-color: black;
+            color: white;
+            padding: 20px;
+        }
+        #content{
+            padding: 50px;
+            background-color: aqua;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+      <div id="nav">
+        it is collection of navbar
+      </div>
+
+     <div id="content">
+        <h2>It is content block</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita itaque voluptatibus atque, ipsam vel harum. Alias laboriosam excepturi tempora quia iste debitis fugit, sed suscipit inventore, blanditiis numquam at quidem est eligendi. Error ab cum cumque recusandae, dicta minima quia perferendis quidem aliquid quos quod corrupti debitis non repudiandae minus praesentium vitae nostrum laborum nihil in soluta? Ducimus, pariatur quidem? Ab consequatur molestiae atque deleniti! Debitis, ipsum dicta. Consequatur mollitia nobis enim. Nobis recusandae aspernatur perferendis hic eaque placeat, cupiditate ex temporibus saepe doloribus officia facilis explicabo, magnam officiis ipsa tenetur vero, maiores quae animi ullam necessitatibus laborum voluptas veritatis.</p>
+        <button onclick="fn()">Explore more</button>
+     </div>
+
+     
+      </div>
+    </div>
+</body>
+</html>

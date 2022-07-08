@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Document</title>
+
+    <script>
+        function fnCreateElement(){
+
+            var inputRef= document.quarySelector("#i1")
+            // create h2 element
+            var h2Ref=document.createElement("h2");
+
+
+            h2Ref.innerText=inputRef.value //<h2> 123<h2>
+            
+        
+                document.querySelector("div").appendChild(h2Ref)
+
+
+
+        }
+    </script>
+
+    <style>
+    div {
+        width: 500px;
+        box-shadow: 0 0 10px black;
+        text-align: center;
+        padding: 50px;
+        margin: 100px auto;
+    }
+
+    </style>
+
+</head>
+<body>
+    <div>
+
+       <input id="i1" type="text" placeholder="enter text">
+       <button onclick="fnCreateElement()">submit</button>
+    </div>
+
+</body>
+</html>

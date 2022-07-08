@@ -1,0 +1,46 @@
+ scope;-
+ any thing where you can access the variable
+scope is define inside curley braces
+
+ 2. Functional scope
+
+Functional fn (){
+    this is called functional block/scope
+
+}
+
+eg; if(){
+     
+     if block
+     this is block scope
+}
+
+block scope and function scope;
+
+function fn(){
+    var a=10;
+    if(true){
+// you can access  a in if block and else block but inside of function block/scope
+
+console.log(a);
+    }else{
+console.log(a)
+    }
+    console.log(a)
+}
+
+incase let and const a can only be acces inside if block 
+
+
+Hositing;
+
+it is technique to access/ execue before it's variable
+function fn(params) {
+  //  var x=100;
+    console.log(x)
+ var x;
+ x=100;
+  o/p; undefine
+ 
+}
+fn()

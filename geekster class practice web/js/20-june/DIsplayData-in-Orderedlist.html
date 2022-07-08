@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // ol will be once but list will be multiple time
+
+         var olRef=document.createElement("ol");
+        function fnCreateElement() {
+           
+            var inputRef=document.getElementById('i1');
+            var divRef= document.querySelector("div");
+            var inputValue= inputRef.value;
+            //alert(inputValue);
+
+            // create ol tag and li tag
+
+            //var olRef=document.createElement("ol");
+               
+           
+
+            var liRef= document.createElement("li");
+
+            // <ol>
+                //<li></li></ol>
+                // append li inside ol
+
+                olRef.appendChild(liRef);
+                liRef.innerText=inputValue //ol li Apple li ol
+
+
+                divRef.appendChild(olRef)// <div><Ol><li>Apple</li></ol>  </div>
+
+            
+        }
+        //1. create Element
+        // 2. Get the Reference of input Element
+        //3. Get Reference of Div Element
+        //4. Get the vlue from input Element Reference
+        //5. create li Element
+          //6. append li as child to ol element
+        //7. append input element value as innertext to li element
+        
+        //8. append ol as child to div element
+              
+
+
+       
+    </script>
+
+    <style>
+        div {
+            width: 500px;
+            box-shadow: 0 0 10px black;
+            text-align: center;
+            padding: 50px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input id="i1" type="text" placeholder="">
+        <button onclick="fnCreateElement()">search</button>
+    </div>
+</body>
+</html>

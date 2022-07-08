@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+    <script>
+    function changeH2(){
+        // get the reference of h2 element
+        var h2Reference= document.getElementById("h2Ref");
+      // refernce of any html element or tag will be in object format 
+
+          var p1Reference= document.getElementById("p1")
+      // update content
+       h2Reference.innerText="Hello, Javascript";
+       p1Reference.innerText="this is Javascript code"
+    }
+    </script>
+</head>
+<body>
+   <h2 id="h2Ref">welcome to html</h2> 
+   <p id="p1">this is html document code</p>
+   <button onclick="changeH2()">Explore</button>
+</body>
+</html>
